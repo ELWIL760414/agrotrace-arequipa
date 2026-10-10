@@ -27,7 +27,7 @@ folium.Polygon(
     color="purple", fill=True, fill_color="purple", fill_opacity=0.4, tooltip=f"CLP: {data_parcelas['CLP']}"
 ).add_to(m)
 
-col1, col2 = st.columns()
+col1, col2 = st.columns(2)
 with col1:
     st_folium(m, width=600, height=450)
 with col2:
